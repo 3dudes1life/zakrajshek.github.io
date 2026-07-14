@@ -1,70 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="William Zakrajshek is a founder, author, podcast host and community builder creating LGBTQ+ visibility, stories and experiences that help people feel seen." />
-  <meta name="theme-color" content="#050505" />
-  <meta property="og:title" content="William Zakrajshek — Founder, Author & Community Builder" />
-  <meta property="og:description" content="Building visibility, stories and communities that help people feel seen." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://zakrajshek.com" />
-  <title>William Zakrajshek — Founder, Author & Community Builder</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Official site of William Zakrajshek — founder, author, speaker, podcast host and community builder behind Out at the Fair, A Little Throuple Tea, 3Dudes1Life Creative and Tres Amigos, Una Vida.">
+  <meta name="theme-color" content="#050505">
+  <meta property="og:title" content="William Zakrajshek | Founder, Author, Speaker & Community Builder">
+  <meta property="og:description" content="Stories, speaking, media, books and community-building work from William Zakrajshek.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zakrajshek.com">
+  <title>William Zakrajshek | Founder, Author, Speaker & Community Builder</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#050505;--panel:#0d0d0f;--panel2:#121216;--text:#f7f7f8;--muted:#a7a7ad;--line:#25252b;--accent:#ff3ca6;--accent2:#7d5cff;--max:1240px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.55;overflow-x:hidden}
-    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(to bottom,black,transparent 70%)}
-    a{color:inherit;text-decoration:none}.wrap{width:min(calc(100% - 40px),var(--max));margin:auto}.section{padding:110px 0;border-top:1px solid var(--line)}
-    header{position:sticky;top:0;z-index:50;background:rgba(5,5,5,.84);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.08)}
-    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-family:'Manrope',sans-serif;font-weight:800;letter-spacing:.06em}.brand-mark{display:grid;place-items:center;width:38px;height:38px;border:1px solid var(--line);border-radius:50%;font-size:.78rem}.brand-name{font-size:.92rem}.links{display:flex;gap:28px;align-items:center}.links a{font-size:.9rem;color:var(--muted)}.links a:hover{color:white}.nav-cta{padding:11px 16px;border:1px solid var(--line);border-radius:999px;color:white!important}.menu{display:none;background:none;color:white;border:1px solid var(--line);border-radius:999px;padding:9px 14px}
-    .hero{padding:96px 0 74px;min-height:calc(100vh - 76px);display:grid;align-items:center}.eyebrow{display:flex;align-items:center;gap:10px;color:#d0d0d5;text-transform:uppercase;letter-spacing:.18em;font-size:.72rem;font-weight:700}.eyebrow:before{content:"";width:34px;height:1px;background:var(--accent)}
-    .hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:70px;align-items:end}.hero h1{font-family:'Manrope',sans-serif;font-size:clamp(4rem,8.2vw,8.2rem);line-height:.92;letter-spacing:-.075em;margin:24px 0 32px;max-width:980px}.hero h1 span{display:block;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.65)}
-    .hero-copy{max-width:740px;font-size:clamp(1.1rem,1.55vw,1.42rem);color:#c9c9ce}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:999px;font-weight:700;font-size:.92rem;border:1px solid var(--line)}.btn-primary{background:white;color:black}.btn-primary:hover{background:var(--accent);color:white}.btn-secondary:hover{border-color:#666}
-    .hero-aside{border:1px solid var(--line);border-radius:28px;padding:28px;background:linear-gradient(160deg,#141419 0%,#09090b 100%);min-height:430px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}.hero-aside:before{content:"WZ";position:absolute;right:-28px;top:-42px;font-family:'Manrope';font-weight:800;font-size:12rem;color:rgba(255,255,255,.035);letter-spacing:-.1em}.status{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;color:#d8d8dc}.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 18px var(--accent)}.aside-title{font-family:'Manrope';font-size:2rem;line-height:1.1;letter-spacing:-.04em;max-width:300px}.aside-list{display:grid;gap:12px}.aside-list div{padding-top:12px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:.86rem}.aside-list strong{color:white;text-align:right}
-    .proof{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.proof div{padding:28px;border-right:1px solid var(--line)}.proof div:last-child{border-right:0}.proof strong{display:block;font-family:'Manrope';font-size:1.25rem;margin-bottom:5px}.proof span{font-size:.84rem;color:var(--muted)}
-    .section-head{display:grid;grid-template-columns:.45fr 1.55fr;gap:42px;margin-bottom:58px}.section-kicker{color:var(--accent);font-weight:700;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase}.section h2{font-family:'Manrope';font-size:clamp(2.7rem,5vw,5.6rem);line-height:1;letter-spacing:-.055em;margin:0}.lede{font-size:1.25rem;color:#c7c7cc;max-width:780px}
-    .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}.story-copy{font-size:1.16rem;color:#c2c2c8}.story-copy p:first-child{font-size:1.52rem;color:white}.story-cards{display:grid;gap:16px}.story-card{padding:26px;border:1px solid var(--line);border-radius:22px;background:var(--panel)}.story-card span{color:var(--accent);font-size:.78rem;text-transform:uppercase;letter-spacing:.12em}.story-card h3{font-family:'Manrope';font-size:1.35rem;margin:10px 0 8px}.story-card p{margin:0;color:var(--muted)}
-    .work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.work-card{border:1px solid var(--line);border-radius:26px;padding:30px;background:var(--panel);min-height:320px;display:flex;flex-direction:column;justify-content:space-between;transition:.25s}.work-card:hover{transform:translateY(-4px);border-color:#4a4a52}.work-card.feature{grid-column:span 2;min-height:390px;background:radial-gradient(circle at 80% 20%,rgba(255,60,166,.17),transparent 33%),var(--panel)}.work-top{display:flex;justify-content:space-between;gap:20px}.num{color:#72727a;font-family:'Manrope';font-size:.85rem}.tag{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent)}.work-card h3{font-family:'Manrope';font-size:clamp(2rem,3.8vw,4.3rem);letter-spacing:-.05em;line-height:1;margin:34px 0 16px}.work-card:not(.feature) h3{font-size:2.35rem}.work-card p{color:var(--muted);max-width:680px}.work-link{display:inline-flex;gap:8px;align-items:center;font-weight:700;margin-top:22px}.work-link:hover{color:var(--accent)}
-    .quote{padding:130px 0;text-align:center}.quote blockquote{font-family:'Manrope';font-size:clamp(2.5rem,5.4vw,6rem);line-height:1.04;letter-spacing:-.055em;margin:0 auto;max-width:1100px}.quote em{color:var(--accent);font-style:normal}
-    .services{display:grid;grid-template-columns:.7fr 1.3fr;gap:60px}.service-list{border-top:1px solid var(--line)}.service{display:grid;grid-template-columns:70px 1fr auto;gap:18px;padding:28px 0;border-bottom:1px solid var(--line);align-items:start}.service .index{color:#666}.service h3{font-family:'Manrope';font-size:1.55rem;margin:0 0 8px}.service p{margin:0;color:var(--muted);max-width:650px}.service .arrow{font-size:1.4rem;color:#777}
-    .media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.media-card{border:1px solid var(--line);border-radius:22px;padding:26px;background:var(--panel);min-height:220px}.media-card small{color:var(--accent);text-transform:uppercase;letter-spacing:.12em}.media-card h3{font-family:'Manrope';font-size:1.5rem;margin:40px 0 10px}.media-card p{color:var(--muted);margin:0}
-    .contact{padding-bottom:120px}.contact-panel{border:1px solid var(--line);border-radius:34px;padding:clamp(32px,6vw,72px);background:radial-gradient(circle at 90% 0%,rgba(125,92,255,.18),transparent 33%),radial-gradient(circle at 0% 100%,rgba(255,60,166,.16),transparent 35%),var(--panel)}.contact-panel h2{max-width:900px}.contact-panel p{font-size:1.15rem;color:#c7c7cc;max-width:720px;margin:24px 0 30px}
-    footer{border-top:1px solid var(--line);padding:30px 0 44px}.footer-grid{display:flex;justify-content:space-between;gap:24px;color:var(--muted);font-size:.86rem}
-    .reveal{opacity:0;transform:translateY(18px);transition:.7s ease}.reveal.visible{opacity:1;transform:none}
-    @media(max-width:900px){.links{display:none;position:absolute;top:76px;left:0;right:0;background:#08080a;border-bottom:1px solid var(--line);padding:22px;flex-direction:column;align-items:flex-start}.links.open{display:flex}.menu{display:block}.hero-grid,.story-grid,.services,.section-head{grid-template-columns:1fr}.hero{padding-top:64px}.hero-aside{min-height:350px}.proof{grid-template-columns:1fr 1fr}.proof div:nth-child(2){border-right:0}.proof div:nth-child(-n+2){border-bottom:1px solid var(--line)}.work-grid{grid-template-columns:1fr}.work-card.feature{grid-column:span 1}.media-grid{grid-template-columns:1fr}.service{grid-template-columns:50px 1fr}.service .arrow{display:none}}
-    @media(max-width:560px){.wrap{width:min(calc(100% - 28px),var(--max))}.section{padding:82px 0}.hero h1{font-size:3.75rem}.proof{grid-template-columns:1fr}.proof div{border-right:0;border-bottom:1px solid var(--line)!important}.proof div:last-child{border-bottom:0!important}.hero-aside{min-height:320px}.work-card{min-height:280px;padding:24px}.footer-grid{flex-direction:column}.contact-panel{border-radius:24px}}
+    :root{
+      --bg:#050505;--panel:#0d0d10;--panel-2:#131318;--text:#f7f7f8;--muted:#a7a7b0;
+      --line:#25252c;--line-strong:#3a3a44;--accent:#ff3ca6;--accent-2:#8d69ff;
+      --max:1220px;--radius:28px;--shadow:0 24px 80px rgba(0,0,0,.32)
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:84px}
+    body{
+      margin:0;background:var(--bg);color:var(--text);font-family:"DM Sans",system-ui,sans-serif;
+      line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased
+    }
+    body::before{
+      content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.15;
+      background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+      background-size:48px 48px;mask-image:linear-gradient(to bottom,#000,transparent 72%)
+    }
+    a{color:inherit;text-decoration:none}
+    button{font:inherit}
+    img{max-width:100%;display:block}
+    .wrap{width:min(calc(100% - 40px),var(--max));margin-inline:auto}
+    .section{padding:112px 0;border-top:1px solid var(--line)}
+    .section-soft{background:linear-gradient(180deg,rgba(255,255,255,.018),transparent)}
+    .kicker{color:var(--accent);font-size:.76rem;font-weight:700;text-transform:uppercase;letter-spacing:.15em}
+    .section-head{display:grid;grid-template-columns:.38fr 1.62fr;gap:40px;margin-bottom:60px;align-items:start}
+    h1,h2,h3{font-family:"Manrope",system-ui,sans-serif}
+    h2{margin:0;font-size:clamp(2.75rem,5.2vw,5.7rem);line-height:.98;letter-spacing:-.06em}
+    .lede{max-width:780px;font-size:1.2rem;color:#c9c9d0}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:13px 20px;
+      border:1px solid var(--line-strong);border-radius:999px;font-weight:700;font-size:.92rem;transition:.22s
+    }
+    .btn-primary{background:#fff;color:#080808;border-color:#fff}
+    .btn-primary:hover{background:var(--accent);border-color:var(--accent);color:#fff;transform:translateY(-1px)}
+    .btn-secondary:hover{border-color:#777;transform:translateY(-1px)}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
+    .reveal.visible{opacity:1;transform:none}
+
+    /* Navigation */
+    header{
+      position:sticky;top:0;z-index:100;background:rgba(5,5,5,.82);backdrop-filter:blur(18px);
+      border-bottom:1px solid rgba(255,255,255,.08)
+    }
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;font-family:"Manrope",sans-serif;font-weight:800;letter-spacing:.06em}
+    .brand-mark{display:grid;place-items:center;width:38px;height:38px;border:1px solid var(--line-strong);border-radius:50%;font-size:.76rem}
+    .brand-name{font-size:.9rem}
+    .desktop-links{display:flex;align-items:center;gap:25px}
+    .desktop-links a{font-size:.88rem;color:var(--muted);transition:.2s}
+    .desktop-links a:hover{color:#fff}
+    .nav-cta{padding:10px 15px;border:1px solid var(--line-strong);border-radius:999px;color:#fff!important}
+    .menu-button{
+      display:none;min-width:48px;min-height:44px;padding:0 14px;color:#fff;background:transparent;
+      border:1px solid var(--line-strong);border-radius:999px
+    }
+    .mobile-menu{
+      display:none;position:fixed;inset:76px 0 0;background:rgba(5,5,5,.98);z-index:90;
+      padding:24px max(20px,env(safe-area-inset-right)) calc(30px + env(safe-area-inset-bottom)) max(20px,env(safe-area-inset-left))
+    }
+    .mobile-menu.open{display:flex;flex-direction:column}
+    .mobile-menu a{
+      display:flex;align-items:center;justify-content:space-between;min-height:62px;border-bottom:1px solid var(--line);
+      font-family:"Manrope",sans-serif;font-size:1.45rem;font-weight:700;letter-spacing:-.03em
+    }
+    .mobile-menu .mobile-cta{margin-top:auto;border:0;background:#fff;color:#080808;border-radius:18px;padding:18px;justify-content:center;min-height:58px;font-size:1rem}
+
+    /* Hero */
+    .hero{padding:92px 0 78px;min-height:calc(100svh - 76px);display:grid;align-items:center}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(310px,.65fr);gap:64px;align-items:end}
+    .hero-eyebrow{display:flex;align-items:center;gap:12px;color:#d4d4da;text-transform:uppercase;letter-spacing:.18em;font-size:.72rem;font-weight:700}
+    .hero-eyebrow::before{content:"";width:34px;height:1px;background:var(--accent);flex:0 0 auto}
+    .hero-title{margin:26px 0 28px;max-width:930px;font-size:clamp(4.5rem,7vw,7.35rem);line-height:.88;letter-spacing:-.078em}
+    .hero-title .line{display:block;white-space:nowrap}
+    .hero-title .line:last-child{margin-top:.08em}
+    .hero-title .accent{color:var(--accent)}
+    .hero-copy{max-width:760px;margin:0;color:#c9c9cf;font-size:clamp(1.08rem,1.45vw,1.34rem)}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+    .hero-card{
+      position:relative;overflow:hidden;min-height:438px;padding:28px;border:1px solid var(--line);
+      border-radius:var(--radius);background:
+      radial-gradient(circle at 82% 12%,rgba(255,60,166,.15),transparent 36%),
+      linear-gradient(155deg,#15151a 0%,#0a0a0d 100%);box-shadow:var(--shadow);
+      display:flex;flex-direction:column;justify-content:space-between
+    }
+    .hero-card::before{
+      content:"WZ";position:absolute;right:-28px;top:-46px;font-family:"Manrope",sans-serif;font-size:12rem;
+      font-weight:800;letter-spacing:-.11em;color:rgba(255,255,255,.035)
+    }
+    .status{position:relative;display:inline-flex;align-items:center;gap:9px;font-size:.78rem;color:#dddde2}
+    .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 18px var(--accent)}
+    .hero-card-title{position:relative;max-width:340px;font-family:"Manrope",sans-serif;font-size:2.1rem;line-height:1.06;letter-spacing:-.05em}
+    .hero-card-list{position:relative;display:grid;gap:12px}
+    .hero-card-list div{display:flex;justify-content:space-between;gap:16px;padding-top:13px;border-top:1px solid var(--line);font-size:.86rem;color:var(--muted)}
+    .hero-card-list strong{max-width:60%;text-align:right;color:#fff}
+
+    /* Proof */
+    .proof{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .proof div{padding:28px;border-right:1px solid var(--line)}
+    .proof div:last-child{border-right:0}
+    .proof strong{display:block;margin-bottom:5px;font-family:"Manrope",sans-serif;font-size:1.18rem;line-height:1.15}
+    .proof span{font-size:.84rem;color:var(--muted)}
+
+    /* Story + timeline */
+    .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px}
+    .story-copy{font-size:1.14rem;color:#c3c3ca}
+    .story-copy p:first-child{font-size:1.48rem;color:#fff}
+    .story-cards{display:grid;gap:16px}
+    .story-card{padding:26px;border:1px solid var(--line);border-radius:22px;background:var(--panel)}
+    .story-card span{color:var(--accent);font-size:.76rem;text-transform:uppercase;letter-spacing:.12em}
+    .story-card h3{margin:10px 0 8px;font-size:1.35rem}
+    .story-card p{margin:0;color:var(--muted)}
+    .timeline{margin-top:64px;border-top:1px solid var(--line)}
+    .timeline-item{display:grid;grid-template-columns:100px 1fr 1.25fr;gap:28px;padding:24px 0;border-bottom:1px solid var(--line)}
+    .timeline-item time{color:var(--accent);font-weight:700}
+    .timeline-item h3,.timeline-item p{margin:0}
+    .timeline-item h3{font-size:1.25rem}
+    .timeline-item p{color:var(--muted)}
+
+    /* Work */
+    .work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .work-card{
+      min-height:330px;padding:30px;border:1px solid var(--line);border-radius:26px;background:var(--panel);
+      display:flex;flex-direction:column;justify-content:space-between;transition:.25s
+    }
+    .work-card:hover{transform:translateY(-4px);border-color:#4a4a54}
+    .work-card.feature{grid-column:span 2;min-height:400px;background:radial-gradient(circle at 83% 18%,rgba(255,60,166,.17),transparent 34%),var(--panel)}
+    .work-top{display:flex;justify-content:space-between;gap:20px}
+    .num{color:#74747e;font-family:"Manrope",sans-serif;font-size:.84rem}
+    .tag{color:var(--accent);font-size:.71rem;text-transform:uppercase;letter-spacing:.12em}
+    .work-card h3{margin:34px 0 16px;font-size:clamp(2.1rem,3.8vw,4.25rem);line-height:1;letter-spacing:-.05em}
+    .work-card:not(.feature) h3{font-size:2.3rem}
+    .work-card p{max-width:720px;color:var(--muted)}
+    .work-link{display:inline-flex;gap:8px;align-items:center;margin-top:20px;font-weight:700}
+    .work-link:hover{color:var(--accent)}
+
+    /* Quote + services */
+    .quote{padding:128px 0;text-align:center}
+    .quote blockquote{max-width:1080px;margin:0 auto;font-family:"Manrope",sans-serif;font-size:clamp(2.5rem,5.1vw,5.8rem);line-height:1.02;letter-spacing:-.055em}
+    .quote em{color:var(--accent);font-style:normal}
+    .services{display:grid;grid-template-columns:.66fr 1.34fr;gap:64px}
+    .service-list{border-top:1px solid var(--line)}
+    .service{display:grid;grid-template-columns:58px 1fr auto;gap:18px;padding:28px 0;border-bottom:1px solid var(--line)}
+    .service .index{color:#6e6e78}
+    .service h3{margin:0 0 8px;font-size:1.5rem}
+    .service p{max-width:680px;margin:0;color:var(--muted)}
+    .service .arrow{color:#777;font-size:1.4rem}
+    .talk-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:54px}
+    .talk-card{min-height:230px;padding:26px;border:1px solid var(--line);border-radius:22px;background:var(--panel)}
+    .talk-card small{color:var(--accent);text-transform:uppercase;letter-spacing:.11em}
+    .talk-card h3{margin:28px 0 10px;font-size:1.42rem;line-height:1.15}
+    .talk-card p{margin:0;color:var(--muted)}
+
+    /* Media + contact */
+    .media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .media-card{min-height:225px;padding:26px;border:1px solid var(--line);border-radius:22px;background:var(--panel);display:flex;flex-direction:column}
+    .media-card small{color:var(--accent);text-transform:uppercase;letter-spacing:.11em}
+    .media-card h3{margin:38px 0 10px;font-size:1.46rem}
+    .media-card p{margin:0;color:var(--muted)}
+    .media-card a{margin-top:auto;padding-top:20px;font-weight:700}
+    .media-card a:hover{color:var(--accent)}
+    .contact{padding-bottom:120px}
+    .contact-panel{
+      padding:clamp(32px,6vw,72px);border:1px solid var(--line);border-radius:34px;
+      background:radial-gradient(circle at 92% 0%,rgba(141,105,255,.18),transparent 35%),radial-gradient(circle at 0% 100%,rgba(255,60,166,.15),transparent 36%),var(--panel)
+    }
+    .contact-panel h2{max-width:900px}
+    .contact-panel p{max-width:760px;margin:24px 0 28px;color:#c7c7ce;font-size:1.14rem}
+    .contact-types{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+    .contact-types span{padding:9px 12px;border:1px solid rgba(255,255,255,.16);border-radius:999px;color:#dddde2;font-size:.84rem}
+    footer{padding:30px 0 calc(44px + env(safe-area-inset-bottom));border-top:1px solid var(--line)}
+    .footer-grid{display:flex;justify-content:space-between;gap:24px;color:var(--muted);font-size:.86rem}
+
+    /* Tablet */
+    @media(max-width:980px){
+      .desktop-links{display:none}.menu-button{display:inline-flex;align-items:center;justify-content:center}
+      .hero-grid,.story-grid,.services,.section-head{grid-template-columns:1fr}
+      .hero{padding-top:64px;min-height:auto}
+      .hero-title{max-width:780px}
+      .hero-title .line{white-space:normal}
+      .hero-card{min-height:350px}
+      .proof{grid-template-columns:1fr 1fr}
+      .proof div:nth-child(2){border-right:0}
+      .proof div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+      .work-grid,.talk-grid,.media-grid{grid-template-columns:1fr}
+      .work-card.feature{grid-column:span 1}
+      .service{grid-template-columns:48px 1fr}.service .arrow{display:none}
+      .timeline-item{grid-template-columns:86px 1fr}.timeline-item p{grid-column:2}
+    }
+
+    /* Mobile-first refinement */
+    @media(max-width:600px){
+      html{scroll-padding-top:70px}
+      .wrap{width:min(calc(100% - 28px),var(--max))}
+      .nav{height:68px}
+      .brand-mark{width:34px;height:34px}
+      .brand-name{font-size:.78rem;letter-spacing:.045em}
+      .mobile-menu{inset:68px 0 0}
+      .section{padding:76px 0}
+      .hero{padding:48px 0 54px}
+      .hero-grid{gap:34px}
+      .hero-eyebrow{align-items:flex-start;font-size:.64rem;line-height:1.5;letter-spacing:.14em}
+      .hero-eyebrow::before{margin-top:.48em;width:24px}
+      .hero-title{
+        margin:20px 0 22px;max-width:100%;font-size:clamp(3rem,15.2vw,4.35rem);
+        line-height:.91;letter-spacing:-.073em
+      }
+      .hero-title .line{display:block;white-space:normal}
+      .hero-title .line + .line{margin-top:.04em}
+      .hero-title .accent{display:inline;color:var(--accent)}
+      .hero-copy{font-size:1.04rem;line-height:1.58}
+      .hero-actions{display:grid;grid-template-columns:1fr;gap:10px;margin-top:26px}
+      .btn{width:100%;min-height:52px}
+      .hero-card{min-height:300px;padding:22px;border-radius:22px}
+      .hero-card::before{font-size:9rem;right:-24px;top:-34px}
+      .hero-card-title{max-width:260px;font-size:1.65rem}
+      .hero-card-list div{font-size:.79rem}
+      .hero-card-list strong{max-width:58%}
+      .proof{grid-template-columns:1fr}
+      .proof div{padding:22px 14px;border-right:0;border-bottom:1px solid var(--line)!important}
+      .proof div:last-child{border-bottom:0!important}
+      .proof strong{font-size:1.08rem}
+      .section-head{gap:18px;margin-bottom:38px}
+      h2{font-size:clamp(2.45rem,12.5vw,3.8rem);line-height:1}
+      .story-grid{gap:34px}
+      .story-copy{font-size:1.04rem}
+      .story-copy p:first-child{font-size:1.28rem}
+      .story-card{padding:22px}
+      .timeline{margin-top:44px}
+      .timeline-item{grid-template-columns:1fr;gap:7px;padding:20px 0}
+      .timeline-item p{grid-column:auto}
+      .work-card,.work-card.feature{min-height:280px;padding:22px;border-radius:22px}
+      .work-card h3,.work-card:not(.feature) h3{font-size:2.05rem}
+      .quote{padding:90px 0}
+      .quote blockquote{font-size:clamp(2.3rem,11.4vw,3.55rem)}
+      .service{grid-template-columns:38px 1fr;padding:24px 0}
+      .service h3{font-size:1.32rem}
+      .talk-grid{margin-top:38px}
+      .talk-card,.media-card{min-height:auto;padding:22px}
+      .talk-card h3,.media-card h3{margin-top:24px}
+      .contact-panel{padding:28px 22px;border-radius:24px}
+      .contact-types{gap:8px}
+      .contact-types span{font-size:.78rem;padding:8px 10px}
+      .footer-grid{flex-direction:column}
+    }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.btn,.work-card{transition:none}
+    }
   </style>
 </head>
 <body>
 <header>
   <div class="wrap nav">
-    <a class="brand" href="#top"><span class="brand-mark">WZ</span><span class="brand-name">WILLIAM ZAKRAJSHEK</span></a>
-    <button class="menu" aria-expanded="false" aria-controls="navlinks">Menu</button>
-    <nav class="links" id="navlinks">
-      <a href="#story">Story</a><a href="#work">Work</a><a href="#services">Work With Me</a><a href="#media">Media</a><a href="#contact" class="nav-cta">Let’s Connect</a>
+    <a class="brand" href="#top" aria-label="William Zakrajshek home">
+      <span class="brand-mark">WZ</span><span class="brand-name">WILLIAM ZAKRAJSHEK</span>
+    </a>
+    <nav class="desktop-links" aria-label="Primary navigation">
+      <a href="#story">About</a><a href="#work">Work</a><a href="#speaking">Speaking</a><a href="#media">Media</a><a class="nav-cta" href="#contact">Let’s Connect</a>
     </nav>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
   </div>
 </header>
+
+<nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+  <a href="#story">About <span>01</span></a>
+  <a href="#work">Work <span>02</span></a>
+  <a href="#speaking">Speaking <span>03</span></a>
+  <a href="#media">Media <span>04</span></a>
+  <a class="mobile-cta" href="#contact">Let’s Connect</a>
+</nav>
+
 <main id="top">
   <section class="hero">
     <div class="wrap">
-      <div class="eyebrow reveal">Founder · Author · Podcast Host · Community Builder</div>
+      <div class="hero-eyebrow reveal">Founder · Author · Speaker · Podcast Host · Community Builder</div>
       <div class="hero-grid">
         <div>
-          <h1 class="reveal">I build things that help people <span>feel seen.</span></h1>
-          <p class="hero-copy reveal">William Zakrajshek is a California-based founder and storyteller whose work connects LGBTQ+ visibility, community-building, live experiences, books, podcasting and real life.</p>
-          <div class="actions reveal"><a class="btn btn-primary" href="#work">Explore the Work</a><a class="btn btn-secondary" href="#contact">Work With William</a></div>
+          <h1 class="hero-title reveal">
+            <span class="line">I build stories,</span>
+            <span class="line">experiences, and</span>
+            <span class="line">communities that</span>
+            <span class="line">make people <span class="accent">feel seen.</span></span>
+          </h1>
+          <p class="hero-copy reveal">I’m William Zakrajshek—the founder behind Out at the Fair, co-creator of 3Dudes1Life Creative, host of A Little Throuple Tea, and co-author of Tres Amigos, Una Vida. From fairgrounds to media, my work turns visibility into belonging.</p>
+          <div class="hero-actions reveal">
+            <a class="btn btn-primary" href="#speaking">Book William</a>
+            <a class="btn btn-secondary" href="#work">Explore the Work</a>
+          </div>
         </div>
-        <aside class="hero-aside reveal">
+        <aside class="hero-card reveal" aria-label="William Zakrajshek profile">
           <div class="status"><span class="dot"></span>Building the next chapter</div>
-          <div class="aside-title">One reputation. Multiple platforms. A much bigger story.</div>
-          <div class="aside-list">
+          <div class="hero-card-title">Founder with receipts. Storyteller with active IP. Community builder with a media future.</div>
+          <div class="hero-card-list">
             <div><span>Known for</span><strong>Out at the Fair</strong></div>
-            <div><span>Now creating</span><strong>Books + weekly media</strong></div>
-            <div><span>Available for</span><strong>Speaking + consulting</strong></div>
+            <div><span>Recognized by</span><strong>40 Under 40 · Techstars</strong></div>
+            <div><span>Available for</span><strong>Speaking · Consulting · Media</strong></div>
           </div>
         </aside>
       </div>
@@ -72,83 +315,168 @@
   </section>
 
   <div class="proof">
-    <div><strong>Founder & CEO</strong><span>OutAt Inc.</span></div>
-    <div><strong>14 Years</strong><span>Out at the Fair legacy</span></div>
-    <div><strong>2-Book World</strong><span>Tres Amigos, Una Vida</span></div>
-    <div><strong>Weekly Since 2025</strong><span>A Little Throuple Tea</span></div>
+    <div><strong>Founder & President</strong><span>OutAt Inc.</span></div>
+    <div><strong>2018 Barham Award</strong><span>Innovation and leadership in the fair industry</span></div>
+    <div><strong>Techstars Austin ’22</strong><span>Accelerator participant through OutAt</span></div>
+    <div><strong>40 Under 40</strong><span>San Diego Metro honoree</span></div>
   </div>
 
   <section id="story" class="section">
     <div class="wrap">
-      <div class="section-head"><div class="section-kicker reveal">01 / The full picture</div><h2 class="reveal">Not a reinvention.<br>A reveal.</h2></div>
+      <div class="section-head">
+        <div class="kicker reveal">01 / The full picture</div>
+        <h2 class="reveal">This isn’t a reinvention.<br>It’s the whole story finally living in one place.</h2>
+      </div>
       <div class="story-grid">
         <div class="story-copy reveal">
-          <p>For years, people knew William primarily as the founder behind Out at the Fair—an LGBTQ+ community program built inside one of America’s most traditional public spaces.</p>
-          <p>But the real skill was never simply producing events. It was reading a room, building trust, packaging an idea, bringing partners together, creating visibility and turning a complicated mission into an experience people could actually feel.</p>
-          <p>That same instinct now powers a broader ecosystem: books inspired by a real-life throuple, a weekly video podcast, a creator brand, speaking, consulting and a public story about what happens when your life becomes bigger than the thing you were once known for.</p>
+          <p>For nearly two decades, I’ve built platforms that turn visibility into belonging.</p>
+          <p>I first became known in San Diego nightlife and community circles as DJ Will Z, then helped grow Out at the Fair from an informal gathering into an official LGBTQ+ fair event with reach across multiple fairs and states.</p>
+          <p>That work evolved into OutAt Inc. Today, the same instinct powers books, podcasting, creator-led media, public speaking, consulting and the growing 3Dudes1Life universe.</p>
+          <p>At the center of all of it is one belief: belonging is something you can design.</p>
         </div>
         <div class="story-cards">
-          <article class="story-card reveal"><span>Community architect</span><h3>Belonging in unexpected places</h3><p>William’s signature work has been creating LGBTQ+ visibility where audiences were not necessarily expecting to find it—and making the experience feel welcoming to everyone.</p></article>
-          <article class="story-card reveal"><span>Founder in motion</span><h3>Building beyond one flagship idea</h3><p>The next chapter is not about abandoning OutAt. It is about placing it inside a larger body of work built around story, connection and cultural impact.</p></article>
-          <article class="story-card reveal"><span>Real-life storyteller</span><h3>The public brand is the life</h3><p>The relationship, the work, the books, the humor, the pivots and the unfinished future are no longer separate projects. Together, they are the platform.</p></article>
+          <article class="story-card reveal"><span>Live experiences</span><h3>Making inclusion visible</h3><p>Building LGBTQ+ joy, programming and partnerships inside major public-event spaces where visibility once felt unexpected.</p></article>
+          <article class="story-card reveal"><span>Authored stories</span><h3>Turning lived experience into IP</h3><p>Books and storytelling that explore unconventional love, identity, reinvention and the work of building a life outside old templates.</p></article>
+          <article class="story-card reveal"><span>Modern media</span><h3>Creating connection at scale</h3><p>A weekly video podcast and connected creator ecosystem built around honesty, humor, relationships, culture and real life.</p></article>
         </div>
       </div>
+      <div class="timeline reveal" aria-label="Career timeline">
+        <div class="timeline-item"><time>2006</time><h3>Moved to San Diego</h3><p>Entered LGBTQ+ nightlife and community culture, beginning a public-facing career in entertainment, promotion and connection.</p></div>
+        <div class="timeline-item"><time>2011–13</time><h3>Out at the Fair took shape</h3><p>What began as a community gathering at the San Diego County Fair became an official fair event.</p></div>
+        <div class="timeline-item"><time>2016</time><h3>40 Under 40</h3><p>Recognized by San Diego Metro for entrepreneurship and community impact.</p></div>
+        <div class="timeline-item"><time>2018</time><h3>Barham Award</h3><p>Out at the Fair received Western Fairs Association’s award for innovation, quality and leadership.</p></div>
+        <div class="timeline-item"><time>2021–22</time><h3>OutAt Inc. + Techstars</h3><p>OutAt became the next-stage company behind the work and joined the Techstars Austin accelerator.</p></div>
+        <div class="timeline-item"><time>2025–26</time><h3>The ecosystem expanded</h3><p>Tres Amigos, Una Vida, A Little Throuple Tea and 3Dudes1Life Creative brought the full storytelling platform into view.</p></div>
+      </div>
     </div>
   </section>
 
-  <section id="work" class="section">
+  <section id="work" class="section section-soft">
     <div class="wrap">
-      <div class="section-head"><div class="section-kicker reveal">02 / Selected work</div><h2 class="reveal">One life.<br>Four connected worlds.</h2></div>
+      <div class="section-head">
+        <div class="kicker reveal">02 / The body of work</div>
+        <h2 class="reveal">One voice.<br>Multiple platforms.<br>A connected ecosystem.</h2>
+      </div>
       <div class="work-grid">
-        <article class="work-card feature reveal"><div><div class="work-top"><span class="num">01</span><span class="tag">Founder & CEO</span></div><h3>OutAt Inc.</h3><p>Out at the Fair brought LGBTQ+ community programming, entertainment, partnerships and visibility into California fairgrounds—building a recognizable platform in spaces where queer audiences had historically been underrepresented.</p></div><a class="work-link" href="https://outatinc.com" target="_blank" rel="noopener">Visit OutAt Inc. ↗</a></article>
-        <article class="work-card reveal"><div><div class="work-top"><span class="num">02</span><span class="tag">Author</span></div><h3>Tres Amigos, Una Vida</h3><p>A fiction series inspired by true events, exploring three men building love, home and family on their own terms. The world continues in the second installment, <em>Fault Lines</em>.</p></div><a class="work-link" href="https://tresamigosunavida.com" target="_blank" rel="noopener">Explore the books ↗</a></article>
-        <article class="work-card reveal"><div><div class="work-top"><span class="num">03</span><span class="tag">Co-host & creator</span></div><h3>A Little Throuple Tea</h3><p>A weekly video podcast hosted by William, Caleb and Daniel about love, chaos, money, family, travel and what it actually takes to build a three-person life.</p></div><a class="work-link" href="https://throupletea.com" target="_blank" rel="noopener">Listen and watch ↗</a></article>
-        <article class="work-card reveal"><div><div class="work-top"><span class="num">04</span><span class="tag">Creator ecosystem</span></div><h3>3Dudes1Life</h3><p>The larger real-life universe connecting the podcast, books, travel, home, Hawaii dreams, entrepreneurship and the ongoing archive of three men building one life.</p></div><a class="work-link" href="https://3dudes1lifecreative.com" target="_blank" rel="noopener">Enter the universe ↗</a></article>
+        <article class="work-card feature reveal">
+          <div class="work-top"><span class="num">01</span><span class="tag">Founder legacy</span></div>
+          <div>
+            <h3>OutAt Inc. + Out at the Fair</h3>
+            <p>Category-defining LGBTQ+ community programming built inside one of America’s most traditional public spaces. From a San Diego fairground gathering to an award-winning multi-fair platform, Out at the Fair proved that belonging can be designed, scaled and celebrated in public.</p>
+            <a class="work-link" href="https://www.outatinc.com/" target="_blank" rel="noopener">Explore OutAt <span>↗</span></a>
+          </div>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-top"><span class="num">02</span><span class="tag">Weekly media</span></div>
+          <div>
+            <h3>A Little Throuple Tea</h3>
+            <p>A weekly video podcast hosted by William, Caleb and Daniel about love, chaos, commitment, money, family, queer culture and the beautifully unfiltered reality of a three-person partnership.</p>
+            <a class="work-link" href="https://throupletea.com/" target="_blank" rel="noopener">Listen and watch <span>↗</span></a>
+          </div>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-top"><span class="num">03</span><span class="tag">Authored IP</span></div>
+          <div>
+            <h3>Tres Amigos, Una Vida</h3>
+            <p>A throuple love story inspired by true emotional terrain—vulnerability, devotion, conflict, healing and the messy magic of choosing each other.</p>
+            <a class="work-link" href="https://www.tresamigosunavida.com/" target="_blank" rel="noopener">Enter the book world <span>↗</span></a>
+          </div>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-top"><span class="num">04</span><span class="tag">Creator universe</span></div>
+          <div>
+            <h3>3Dudes1Life Creative</h3>
+            <p>Real life, real love and real stories connected across podcasting, books, travel, social content, future Hawaii projects and the evolving public story of William, Caleb and Daniel.</p>
+            <a class="work-link" href="https://3dudes1lifecreative.com/" target="_blank" rel="noopener">Explore the universe <span>↗</span></a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <section class="quote"><div class="wrap"><blockquote class="reveal">The work has always been the same: <em>create the space, tell the truth, and help people realize they belong there.</em></blockquote></div></section>
-
-  <section id="services" class="section">
-    <div class="wrap services">
-      <div><div class="section-kicker reveal">03 / Work with William</div><h2 class="reveal" style="margin-top:18px">Experience turned into leverage.</h2><p class="lede reveal">Two decades of founder judgment, community trust, event strategy, public storytelling and hard-earned reinvention—made useful for the people and organizations building what comes next.</p></div>
-      <div class="service-list">
-        <article class="service reveal"><span class="index">01</span><div><h3>Speaking & Media</h3><p>Keynotes, panels, interviews and honest conversations about community, identity, visibility, unconventional family, founder burnout and the courage to build a second chapter.</p></div><span class="arrow">↗</span></article>
-        <article class="service reveal"><span class="index">02</span><div><h3>LGBTQ+ Community Strategy</h3><p>Programming, audience trust, partnerships, sponsorship design and practical guidance for organizations that want meaningful inclusion—not a rainbow logo and a press release.</p></div><span class="arrow">↗</span></article>
-        <article class="service reveal"><span class="index">03</span><div><h3>Event & Experience Consulting</h3><p>Concept development, program architecture, run-of-show thinking, talent, community integration and the invisible details that turn an event into something people remember.</p></div><span class="arrow">↗</span></article>
-        <article class="service reveal"><span class="index">04</span><div><h3>Founder & Nonprofit Advising</h3><p>Clear-eyed support through growth, board dynamics, partnerships, public pressure, difficult pivots and the moment when an organization must evolve without losing its soul.</p></div><span class="arrow">↗</span></article>
-        <article class="service reveal"><span class="index">05</span><div><h3>Brand Partnerships</h3><p>Integrated opportunities across A Little Throuple Tea, 3Dudes1Life, books, social platforms, email, push notifications, live events and long-form storytelling.</p></div><span class="arrow">↗</span></article>
-      </div>
-    </div>
+  <section class="quote">
+    <div class="wrap"><blockquote class="reveal">“My art is <em>storytelling.</em> The platform changes. The work doesn’t.”</blockquote></div>
   </section>
 
-  <section id="media" class="section">
+  <section id="speaking" class="section">
     <div class="wrap">
-      <div class="section-head"><div class="section-kicker reveal">04 / Credibility</div><h2 class="reveal">The story already has receipts.</h2></div>
+      <div class="services">
+        <div>
+          <div class="kicker reveal">03 / Work with William</div>
+          <h2 class="reveal">Built from experience. Delivered with honesty.</h2>
+          <p class="lede reveal">I bring founder experience, LGBTQ+ community leadership, public visibility, event strategy and hard-earned lessons about building, burning out and beginning again.</p>
+        </div>
+        <div class="service-list">
+          <article class="service reveal"><span class="index">01</span><div><h3>Speaking</h3><p>Keynotes, fireside conversations, panels and workshops on belonging, authenticity, reinvention, queer visibility and building community in unexpected places.</p></div><span class="arrow">↗</span></article>
+          <article class="service reveal"><span class="index">02</span><div><h3>Inclusive Event Strategy</h3><p>Programming, community partnerships, audience experience, sponsorship architecture and practical strategy for fairs, festivals and public venues.</p></div><span class="arrow">↗</span></article>
+          <article class="service reveal"><span class="index">03</span><div><h3>Founder Story Architecture</h3><p>Positioning, narrative, offer clarity and public-facing strategy for founders whose work has outgrown the identity they started with.</p></div><span class="arrow">↗</span></article>
+          <article class="service reveal"><span class="index">04</span><div><h3>Brand Partnerships</h3><p>Integrated storytelling across podcast, video, social, books, websites, email, live events and the wider 3Dudes1Life ecosystem.</p></div><span class="arrow">↗</span></article>
+        </div>
+      </div>
+      <div class="talk-grid">
+        <article class="talk-card reveal"><small>Signature talk</small><h3>How to Build Belonging in Places That Weren’t Built for You</h3><p>A founder’s talk about creating LGBTQ+ visibility inside deeply traditional environments.</p></article>
+        <article class="talk-card reveal"><small>Founder talk</small><h3>Authenticity Is a Business Strategy</h3><p>Why honest storytelling is not soft branding language, but a strategic advantage.</p></article>
+        <article class="talk-card reveal"><small>Reinvention talk</small><h3>What Reinvention Actually Looks Like After Forty</h3><p>The emotional and practical reality of ending a chapter without erasing what it built.</p></article>
+        <article class="talk-card reveal"><small>Media talk</small><h3>From Event Brand to Media Brand</h3><p>A case study in expanding a signature live experience into books, podcasting and owned media.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="media" class="section section-soft">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker reveal">04 / Media + recognition</div>
+        <h2 class="reveal">The story already has receipts.</h2>
+      </div>
       <div class="media-grid">
-        <article class="media-card reveal"><small>Recognition</small><h3>40 Under 40</h3><p>Recognized for leadership, entrepreneurship and impact within the community.</p></article>
-        <article class="media-card reveal"><small>Industry</small><h3>Award-winning fair programs</h3><p>Out at the Fair earned recognition through the fair industry for community programming and visibility.</p></article>
-        <article class="media-card reveal"><small>Press</small><h3>Featured founder & author</h3><p>Interviewed about OutAt, entrepreneurship, LGBTQ+ visibility and the story behind <em>Tres Amigos, Una Vida</em>.</p></article>
-        <article class="media-card reveal"><small>Media</small><h3>Weekly video podcast</h3><p>A Little Throuple Tea has released more than 30 episodes and continues with new episodes each Friday.</p></article>
-        <article class="media-card reveal"><small>Publishing</small><h3>A growing story universe</h3><p>The book series and podcast work together—one fictionalized and emotional, the other immediate, funny and real.</p></article>
-        <article class="media-card reveal"><small>Leadership</small><h3>Built in public</h3><p>William’s work spans community, partnerships, media, advocacy, operations, sponsorship and live production.</p></article>
+        <article class="media-card reveal"><small>Recognition</small><h3>San Diego Metro 40 Under 40</h3><p>Recognized for entrepreneurship, leadership and community impact.</p><a href="https://www.sandiegometro.com/2016/09/40-40-awards-2016/" target="_blank" rel="noopener">View recognition ↗</a></article>
+        <article class="media-card reveal"><small>Accelerator</small><h3>Techstars Austin</h3><p>OutAt participated in the 2022 accelerator as the company entered its next growth stage.</p><a href="https://www.outatinc.com/aboutus" target="_blank" rel="noopener">View OutAt profile ↗</a></article>
+        <article class="media-card reveal"><small>Interview</small><h3>SHOUTOUT SOCAL</h3><p>William on authenticity, storytelling, business evolution and the creative chapter ahead.</p><a href="https://shoutoutsocal.com/meet-william-zakrajshek-ceo-co-author/" target="_blank" rel="noopener">Read interview ↗</a></article>
+        <article class="media-card reveal"><small>Interview</small><h3>The Word SD</h3><p>The origin of DJ Will Z, Out at the Fair, OutAt Inc. and the work of building LGBTQ+ visibility.</p><a href="https://thewordsd.news/out-at-the-fair-a-chat-with-william-zakrajshek/" target="_blank" rel="noopener">Read interview ↗</a></article>
+        <article class="media-card reveal"><small>Podcast</small><h3>A Little Throuple Tea</h3><p>Weekly video conversations with William, Caleb and Daniel about modern love, queer life and everything in between.</p><a href="https://throupletea.com/" target="_blank" rel="noopener">Listen and watch ↗</a></article>
+        <article class="media-card reveal"><small>Book</small><h3>Tres Amigos, Una Vida</h3><p>A published story world inspired by unconventional love, emotional truth and a life outside old templates.</p><a href="https://www.tresamigosunavida.com/" target="_blank" rel="noopener">Explore the book ↗</a></article>
       </div>
     </div>
   </section>
 
   <section id="contact" class="section contact">
-    <div class="wrap"><div class="contact-panel reveal"><div class="section-kicker">Speaking · Consulting · Partnerships · Media</div><h2>Let’s build something people remember.</h2><p>For bookings, interviews, consulting, collaborations, strategic partnerships or the beginning of a very good idea.</p><a class="btn btn-primary" href="mailto:will@outatinc.com">will@outatinc.com</a></div></div>
+    <div class="wrap">
+      <div class="contact-panel reveal">
+        <div class="kicker">Speaking · Consulting · Partnerships · Media</div>
+        <h2>Let’s build something people remember.</h2>
+        <p>If you’re building community, telling a story that matters, or looking for a speaker who brings lived experience and real-world strategy to the room, let’s talk.</p>
+        <div class="contact-types"><span>Speaking inquiries</span><span>Podcast + media</span><span>Brand partnerships</span><span>Consulting</span></div>
+        <a class="btn btn-primary" href="mailto:will@outatinc.com">will@outatinc.com</a>
+      </div>
+    </div>
   </section>
 </main>
-<footer><div class="wrap footer-grid"><div>© <span id="year"></span> William Zakrajshek</div><div>Founder · Author · Podcast Host · Community Builder</div></div></footer>
+
+<footer>
+  <div class="wrap footer-grid"><span>© <span id="year"></span> William Zakrajshek</span><span>Founder · Author · Speaker · Community Builder</span></div>
+</footer>
+
 <script>
-  const menu=document.querySelector('.menu'),links=document.querySelector('.links');
-  menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',open)});
-  links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false')}));
-  document.getElementById('year').textContent=new Date().getFullYear();
-  const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  const menuButton=document.querySelector(".menu-button");
+  const mobileMenu=document.querySelector(".mobile-menu");
+  const closeMenu=()=>{mobileMenu.classList.remove("open");menuButton.setAttribute("aria-expanded","false");document.body.style.overflow=""};
+  menuButton.addEventListener("click",()=>{
+    const open=!mobileMenu.classList.contains("open");
+    mobileMenu.classList.toggle("open",open);
+    menuButton.setAttribute("aria-expanded",String(open));
+    document.body.style.overflow=open?"hidden":"";
+  });
+  mobileMenu.querySelectorAll("a").forEach(link=>link.addEventListener("click",closeMenu));
+  window.addEventListener("resize",()=>{if(window.innerWidth>980)closeMenu()});
+  document.getElementById("year").textContent=new Date().getFullYear();
+  if("IntersectionObserver" in window){
+    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
+      if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target)}
+    }),{threshold:.1,rootMargin:"0px 0px -30px 0px"});
+    document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+  }else{
+    document.querySelectorAll(".reveal").forEach(el=>el.classList.add("visible"));
+  }
 </script>
 </body>
 </html>
