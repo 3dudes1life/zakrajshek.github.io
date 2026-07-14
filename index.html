@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="Official site of William Zakrajshek — founder, author, speaker, podcast host and community builder behind Out at the Fair, A Little Throuple Tea, 3Dudes1Life Creative and Tres Amigos, Una Vida.">
+  <meta name="description" content="Official site of William Zakrajshek — founder, author, speaker, former San Diego DJ and community builder whose work spans nightlife, Out at the Fair, books, podcasting and creator-led media.">
   <meta name="theme-color" content="#050505">
   <meta property="og:title" content="William Zakrajshek | Founder, Author, Speaker & Community Builder">
-  <meta property="og:description" content="Stories, speaking, media, books and community-building work from William Zakrajshek.">
+  <meta property="og:description" content="From San Diego nightlife to Out at the Fair, books and podcasting: the work of founder, author and community builder William Zakrajshek.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://zakrajshek.com">
   <title>William Zakrajshek | Founder, Author, Speaker & Community Builder</title>
@@ -185,10 +185,38 @@
     footer{padding:30px 0 calc(44px + env(safe-area-inset-bottom));border-top:1px solid var(--line)}
     .footer-grid{display:flex;justify-content:space-between;gap:24px;color:var(--muted);font-size:.86rem}
 
+
+    /* DJ chapter + ecosystem */
+    .dj-stage{position:relative;overflow:hidden;background:radial-gradient(circle at 82% 15%,rgba(255,60,166,.13),transparent 34%),linear-gradient(180deg,#0a0a0d 0%,#050505 100%)}
+    .dj-stage::after{content:"DJ WILL Z";position:absolute;right:-3vw;bottom:-4vw;font-family:"Manrope",sans-serif;font-size:clamp(6rem,18vw,18rem);font-weight:800;letter-spacing:-.09em;color:rgba(255,255,255,.022);white-space:nowrap;pointer-events:none}
+    .dj-grid{position:relative;z-index:1;display:grid;grid-template-columns:.82fr 1.18fr;gap:68px;align-items:start}
+    .dj-intro{font-size:1.2rem;color:#c8c8cf;max-width:680px}
+    .dj-pullquote{margin-top:34px;padding:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-family:"Manrope",sans-serif;font-size:clamp(1.7rem,3vw,2.7rem);line-height:1.08;letter-spacing:-.045em}
+    .dj-pullquote em{font-style:normal;color:var(--accent)}
+    .dj-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .dj-fact{min-height:190px;padding:24px;border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.025)}
+    .dj-fact small{display:block;color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:.12em;margin-bottom:28px}
+    .dj-fact h3{font-size:1.3rem;margin:0 0 9px}
+    .dj-fact p{margin:0;color:var(--muted)}
+    .archive-note{position:relative;z-index:1;margin-top:52px;display:flex;justify-content:space-between;gap:28px;align-items:center;padding:24px 26px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(90deg,rgba(255,60,166,.07),rgba(141,105,255,.05))}
+    .archive-note strong{display:block;font-family:"Manrope",sans-serif;font-size:1.2rem;margin-bottom:4px}
+    .archive-note p{margin:0;color:var(--muted)}
+    .ecosystem{display:grid;grid-template-columns:.72fr 1.28fr;gap:64px;align-items:center}
+    .orbit{position:relative;min-height:520px;display:grid;place-items:center}
+    .orbit::before,.orbit::after{content:"";position:absolute;border:1px solid var(--line);border-radius:50%}
+    .orbit::before{width:430px;height:430px}.orbit::after{width:285px;height:285px}
+    .orbit-center{position:relative;z-index:3;width:170px;height:170px;border-radius:50%;display:grid;place-items:center;text-align:center;background:#fff;color:#080808;font-family:"Manrope",sans-serif;font-weight:800;line-height:1.05;box-shadow:0 18px 60px rgba(255,255,255,.08)}
+    .orbit-node{position:absolute;z-index:4;min-width:150px;padding:14px 16px;border:1px solid var(--line-strong);border-radius:999px;background:#0f0f13;text-align:center;font-weight:700;font-size:.84rem}
+    .orbit-node.n1{top:28px;left:50%;transform:translateX(-50%)}.orbit-node.n2{right:5px;top:46%}.orbit-node.n3{bottom:26px;left:50%;transform:translateX(-50%)}.orbit-node.n4{left:0;top:46%}
+    .ecosystem-copy p{font-size:1.12rem;color:#c5c5cc}
+    .ecosystem-list{display:grid;gap:12px;margin-top:28px}
+    .ecosystem-list div{display:grid;grid-template-columns:42px 1fr;gap:14px;padding-top:14px;border-top:1px solid var(--line)}
+    .ecosystem-list span{color:var(--accent);font-weight:700}.ecosystem-list strong{font-family:"Manrope",sans-serif}
+
     /* Tablet */
     @media(max-width:980px){
       .desktop-links{display:none}.menu-button{display:inline-flex;align-items:center;justify-content:center}
-      .hero-grid,.story-grid,.services,.section-head{grid-template-columns:1fr}
+      .hero-grid,.story-grid,.services,.section-head,.dj-grid,.ecosystem{grid-template-columns:1fr}
       .hero{padding-top:64px;min-height:auto}
       .hero-title{max-width:780px}
       .hero-title .line{white-space:normal}
@@ -200,6 +228,7 @@
       .work-card.feature{grid-column:span 1}
       .service{grid-template-columns:48px 1fr}.service .arrow{display:none}
       .timeline-item{grid-template-columns:86px 1fr}.timeline-item p{grid-column:2}
+      .dj-facts{grid-template-columns:1fr 1fr}.archive-note{align-items:flex-start}.orbit{min-height:470px}
     }
 
     /* Mobile-first refinement */
@@ -240,6 +269,7 @@
       .story-copy{font-size:1.04rem}
       .story-copy p:first-child{font-size:1.28rem}
       .story-card{padding:22px}
+      .dj-facts{grid-template-columns:1fr}.dj-fact{min-height:auto}.dj-pullquote{font-size:2rem}.archive-note{flex-direction:column}.archive-note .btn{width:100%}.orbit{min-height:390px}.orbit::before{width:310px;height:310px}.orbit::after{width:205px;height:205px}.orbit-center{width:132px;height:132px}.orbit-node{min-width:122px;padding:11px 12px;font-size:.72rem}.orbit-node.n2{right:-8px}.orbit-node.n4{left:-8px}
       .timeline{margin-top:44px}
       .timeline-item{grid-template-columns:1fr;gap:7px;padding:20px 0}
       .timeline-item p{grid-column:auto}
@@ -269,7 +299,7 @@
       <span class="brand-mark">WZ</span><span class="brand-name">WILLIAM ZAKRAJSHEK</span>
     </a>
     <nav class="desktop-links" aria-label="Primary navigation">
-      <a href="#story">About</a><a href="#work">Work</a><a href="#speaking">Speaking</a><a href="#media">Media</a><a class="nav-cta" href="#contact">Let’s Connect</a>
+      <a href="#story">About</a><a href="#dj-will-z">DJ Will Z</a><a href="#work">Work</a><a href="#speaking">Speaking</a><a href="#media">Media</a><a class="nav-cta" href="#contact">Let’s Connect</a>
     </nav>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
   </div>
@@ -277,9 +307,10 @@
 
 <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
   <a href="#story">About <span>01</span></a>
-  <a href="#work">Work <span>02</span></a>
-  <a href="#speaking">Speaking <span>03</span></a>
-  <a href="#media">Media <span>04</span></a>
+  <a href="#dj-will-z">DJ Will Z <span>02</span></a>
+  <a href="#work">Work <span>03</span></a>
+  <a href="#speaking">Speaking <span>04</span></a>
+  <a href="#media">Media <span>05</span></a>
   <a class="mobile-cta" href="#contact">Let’s Connect</a>
 </nav>
 
@@ -291,11 +322,11 @@
         <div>
           <h1 class="hero-title reveal">
             <span class="line">I build stories,</span>
-            <span class="line">experiences, and</span>
-            <span class="line">communities that</span>
-            <span class="line">make people <span class="accent">feel seen.</span></span>
+            <span class="line">spaces, and media</span>
+            <span class="line">that make people</span>
+            <span class="line"><span class="accent">feel seen.</span></span>
           </h1>
-          <p class="hero-copy reveal">I’m William Zakrajshek—the founder behind Out at the Fair, co-creator of 3Dudes1Life Creative, host of A Little Throuple Tea, and co-author of Tres Amigos, Una Vida. From fairgrounds to media, my work turns visibility into belonging.</p>
+          <p class="hero-copy reveal">I’m William Zakrajshek. Before the fairs, books and podcast, San Diego knew me as DJ Will Z. Today, I’m the founder behind Out at the Fair, co-creator of 3Dudes1Life Creative, host of A Little Throuple Tea and co-author of Tres Amigos, Una Vida. The platform changes. The work is still about belonging.</p>
           <div class="hero-actions reveal">
             <a class="btn btn-primary" href="#speaking">Book William</a>
             <a class="btn btn-secondary" href="#work">Explore the Work</a>
@@ -305,9 +336,9 @@
           <div class="status"><span class="dot"></span>Building the next chapter</div>
           <div class="hero-card-title">Founder with receipts. Storyteller with active IP. Community builder with a media future.</div>
           <div class="hero-card-list">
+            <div><span>First public chapter</span><strong>DJ Will Z · San Diego</strong></div>
             <div><span>Known for</span><strong>Out at the Fair</strong></div>
-            <div><span>Recognized by</span><strong>40 Under 40 · Techstars</strong></div>
-            <div><span>Available for</span><strong>Speaking · Consulting · Media</strong></div>
+            <div><span>Now building</span><strong>Books · Podcasting · Media</strong></div>
           </div>
         </aside>
       </div>
@@ -315,7 +346,7 @@
   </section>
 
   <div class="proof">
-    <div><strong>Founder & President</strong><span>OutAt Inc.</span></div>
+    <div><strong>12-Year DJ Career</strong><span>San Diego nightlife · Rich’s · Flicks · Pride events</span></div>
     <div><strong>2018 Barham Award</strong><span>Innovation and leadership in the fair industry</span></div>
     <div><strong>Techstars Austin ’22</strong><span>Accelerator participant through OutAt</span></div>
     <div><strong>40 Under 40</strong><span>San Diego Metro honoree</span></div>
@@ -330,7 +361,7 @@
       <div class="story-grid">
         <div class="story-copy reveal">
           <p>For nearly two decades, I’ve built platforms that turn visibility into belonging.</p>
-          <p>I first became known in San Diego nightlife and community circles as DJ Will Z, then helped grow Out at the Fair from an informal gathering into an official LGBTQ+ fair event with reach across multiple fairs and states.</p>
+          <p>I first became known in San Diego nightlife and community circles as DJ Will Z. For roughly twelve years, Top 40 and hip-hop sets, Pride events, residencies and packed rooms taught me how crowds move, how culture travels and how community forms in real time. I later helped grow Out at the Fair from an informal gathering into an official LGBTQ+ fair event with reach across multiple fairs and states.</p>
           <p>That work evolved into OutAt Inc. Today, the same instinct powers books, podcasting, creator-led media, public speaking, consulting and the growing 3Dudes1Life universe.</p>
           <p>At the center of all of it is one belief: belonging is something you can design.</p>
         </div>
@@ -341,7 +372,8 @@
         </div>
       </div>
       <div class="timeline reveal" aria-label="Career timeline">
-        <div class="timeline-item"><time>2006</time><h3>Moved to San Diego</h3><p>Entered LGBTQ+ nightlife and community culture, beginning a public-facing career in entertainment, promotion and connection.</p></div>
+        <div class="timeline-item"><time>2006</time><h3>Moved to San Diego</h3><p>Entered Hillcrest nightlife, first working behind the bar at Numbers & The Flame and finding a new community.</p></div>
+        <div class="timeline-item"><time>2007–20</time><h3>DJ Will Z</h3><p>A twelve-year Top 40 and hip-hop DJ chapter spanning San Diego nightlife, club residencies, Pride-related events and regional bookings.</p></div>
         <div class="timeline-item"><time>2011–13</time><h3>Out at the Fair took shape</h3><p>What began as a community gathering at the San Diego County Fair became an official fair event.</p></div>
         <div class="timeline-item"><time>2016</time><h3>40 Under 40</h3><p>Recognized by San Diego Metro for entrepreneurship and community impact.</p></div>
         <div class="timeline-item"><time>2018</time><h3>Barham Award</h3><p>Out at the Fair received Western Fairs Association’s award for innovation, quality and leadership.</p></div>
@@ -351,10 +383,35 @@
     </div>
   </section>
 
+  <section id="dj-will-z" class="section dj-stage">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker reveal">02 / Before the founder story</div>
+        <h2 class="reveal">There was nightlife.<br>And San Diego knew me as DJ Will Z.</h2>
+      </div>
+      <div class="dj-grid">
+        <div class="reveal">
+          <p class="dj-intro">For roughly twelve years, I was a Top 40 and hip-hop DJ in San Diego. I learned the craft after DJ Nikno invited me to open, then built a public chapter through Hillcrest nightlife, resident sets, Pride-related events and regional bookings before that era naturally closed around the pandemic.</p>
+          <div class="dj-pullquote">The booth was where I learned <em>how rooms feel, how crowds move, and how belonging can happen in real time.</em></div>
+        </div>
+        <div class="dj-facts">
+          <article class="dj-fact reveal"><small>Residencies</small><h3>Rich’s + Flicks</h3><p>Publicly documented as resident DJ venues during the San Diego nightlife chapter.</p></article>
+          <article class="dj-fact reveal"><small>Regional reach</small><h3>Pride + city events</h3><p>Bookings extended beyond San Diego to Minneapolis Pride, San Jose and Long Beach.</p></article>
+          <article class="dj-fact reveal"><small>Digital first</small><h3>DJ WillZ-Mobile</h3><p>San Diego Metro profiled the custom mobile app in 2016 as an early regional DJ technology milestone.</p></article>
+          <article class="dj-fact reveal"><small>What it built</small><h3>Instinct before strategy</h3><p>Programming a dance floor became the first version of designing an audience experience.</p></article>
+        </div>
+      </div>
+      <div class="archive-note reveal">
+        <div><strong>The DJ Will Z archive is the next visual layer.</strong><p>Selected flyers, club photos, app screenshots and surviving mixes will live here as the archive is assembled.</p></div>
+        <a class="btn btn-secondary" href="mailto:will@outatinc.com?subject=DJ%20Will%20Z%20Archive">Share an archive item</a>
+      </div>
+    </div>
+  </section>
+
   <section id="work" class="section section-soft">
     <div class="wrap">
       <div class="section-head">
-        <div class="kicker reveal">02 / The body of work</div>
+        <div class="kicker reveal">03 / The body of work</div>
         <h2 class="reveal">One voice.<br>Multiple platforms.<br>A connected ecosystem.</h2>
       </div>
       <div class="work-grid">
@@ -394,15 +451,38 @@
     </div>
   </section>
 
+  <section class="section">
+    <div class="wrap ecosystem">
+      <div class="orbit reveal" aria-label="William Zakrajshek brand ecosystem">
+        <div class="orbit-center">WILLIAM<br>ZAKRAJSHEK</div>
+        <div class="orbit-node n1">OUTAT + OATF</div>
+        <div class="orbit-node n2">PODCAST</div>
+        <div class="orbit-node n3">BOOKS</div>
+        <div class="orbit-node n4">3DUDES1LIFE</div>
+      </div>
+      <div class="ecosystem-copy">
+        <div class="kicker reveal">04 / The ecosystem</div>
+        <h2 class="reveal">The projects aren’t competing identities. They’re proof of one point of view.</h2>
+        <p class="reveal">Zakrajshek.com is the center of gravity. OutAt proves the founder. Out at the Fair proves the impact. The podcast creates weekly intimacy. The books turn lived experience into owned intellectual property. 3Dudes1Life connects the whole story to real life.</p>
+        <div class="ecosystem-list reveal">
+          <div><span>01</span><strong>Nightlife taught me how to read a room.</strong></div>
+          <div><span>02</span><strong>Out at the Fair taught me how to build belonging at scale.</strong></div>
+          <div><span>03</span><strong>Books and podcasting turned the lived story into media.</strong></div>
+          <div><span>04</span><strong>The next chapter turns that body of work into speaking, consulting and partnerships.</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="quote">
-    <div class="wrap"><blockquote class="reveal">“My art is <em>storytelling.</em> The platform changes. The work doesn’t.”</blockquote></div>
+    <div class="wrap"><blockquote class="reveal">“The platform changes. The work stays the same: create the room, read the energy, and help people <em>feel seen.</em>”</blockquote></div>
   </section>
 
   <section id="speaking" class="section">
     <div class="wrap">
       <div class="services">
         <div>
-          <div class="kicker reveal">03 / Work with William</div>
+          <div class="kicker reveal">05 / Work with William</div>
           <h2 class="reveal">Built from experience. Delivered with honesty.</h2>
           <p class="lede reveal">I bring founder experience, LGBTQ+ community leadership, public visibility, event strategy and hard-earned lessons about building, burning out and beginning again.</p>
         </div>
@@ -425,7 +505,7 @@
   <section id="media" class="section section-soft">
     <div class="wrap">
       <div class="section-head">
-        <div class="kicker reveal">04 / Media + recognition</div>
+        <div class="kicker reveal">06 / Media + recognition</div>
         <h2 class="reveal">The story already has receipts.</h2>
       </div>
       <div class="media-grid">
@@ -453,7 +533,7 @@
 </main>
 
 <footer>
-  <div class="wrap footer-grid"><span>© <span id="year"></span> William Zakrajshek</span><span>Founder · Author · Speaker · Community Builder</span></div>
+  <div class="wrap footer-grid"><span>© <span id="year"></span> William Zakrajshek</span><span>Founder · Former DJ · Author · Speaker · Community Builder</span></div>
 </footer>
 
 <script>
