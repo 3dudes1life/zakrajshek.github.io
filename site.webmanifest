@@ -1,9 +1,40 @@
 {
-  "name": "William Zakrajshek",
-  "short_name": "WZ",
-  "start_url": "/",
+  "name": "William Zakrajshek \u2014 Founder, Author, Speaker & Creator",
+  "short_name": "William Z",
+  "description": "Official website of William Zakrajshek.",
+  "id": "/",
+  "start_url": "/?source=pwa",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "portrait-primary",
   "background_color": "#050505",
   "theme_color": "#050505",
-  "icons": []
+  "lang": "en-US",
+  "categories": [
+    "business",
+    "entertainment",
+    "lifestyle"
+  ],
+  "icons": [
+    {
+      "src": "/assets/apple-touch-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "About William",
+      "url": "/about.html"
+    },
+    {
+      "name": "Speaking",
+      "url": "/speaking.html"
+    },
+    {
+      "name": "Books & Podcast",
+      "url": "/books-podcast.html"
+    }
+  ]
 }
