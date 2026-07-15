@@ -334,3 +334,11 @@ button,.btn,.nav a{touch-action:manipulation}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
 @media(display-mode:standalone){header{padding-top:env(safe-area-inset-top)}.mobile-menu{padding-bottom:calc(30px + env(safe-area-inset-bottom))}}
+
+
+/* Launch v2: asset-ready, conversion and mobile polish */
+body.menu-open{overflow:hidden}.chapter-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.chapter-card{padding:30px;border:1px solid var(--line);border-radius:26px;background:var(--panel);min-height:310px;display:flex;flex-direction:column}.chapter-card>span{color:var(--accent);font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em}.chapter-card h3{font-size:2rem;line-height:1.04;letter-spacing:-.04em;margin:24px 0 14px}.chapter-card p{color:var(--muted);margin:0 0 28px}.chapter-card .work-link{margin-top:auto}.asset-slot{border:1px dashed #52525d;border-radius:22px;background:linear-gradient(135deg,rgba(255,60,166,.08),rgba(141,105,255,.08));display:grid;place-content:center;text-align:center;min-height:220px;color:#eee;padding:24px}.asset-slot span{font-family:Manrope,sans-serif;font-weight:800;font-size:1.25rem}.asset-slot small{display:block;color:var(--muted);margin-top:8px}.asset-slot-portrait{min-height:180px;margin-bottom:18px}.asset-slot-wide{min-height:380px}.asset-feature{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}.asset-ready h2{font-size:clamp(2.6rem,5vw,5rem);margin:14px 0 24px}.asset-ready .btn{margin-top:18px}
+@media(max-width:900px){.chapter-grid,.asset-feature{grid-template-columns:1fr}.asset-feature{gap:32px}.asset-slot-wide{min-height:260px}.hero-card{min-height:auto}.hero{min-height:auto;padding-top:58px}.hero-title{font-size:clamp(3.15rem,15vw,5rem)}.section{padding:78px 0}}
+@media(max-width:560px){.wrap{width:min(calc(100% - 28px),var(--max))}.chapter-card{min-height:0;padding:24px}.chapter-card h3{font-size:1.7rem}.hero-actions .btn{width:100%}.mobile-menu a{font-size:1.25rem}.section-head{margin-bottom:38px}.asset-slot-portrait{display:none}}
+
+.asset-status{display:inline-flex;margin-top:18px;color:var(--muted);font-size:.9rem;font-weight:700}
