@@ -849,3 +849,8 @@ h2 { letter-spacing: -0.035em; }
  .recognition-card-wide{grid-column:span 1}
  .recognition-card-tall{grid-row:span 1}
 }
+
+/* Version 6.8 — recognition portrait framing */
+.recognition-card:first-child img{
+  object-position:center 10%;
+}
