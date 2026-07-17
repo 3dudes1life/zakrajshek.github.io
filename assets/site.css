@@ -504,3 +504,30 @@ body.menu-open{overflow:hidden}.chapter-grid{display:grid;grid-template-columns:
   .dj-digital-cards-expanded figure:nth-child(2){grid-column:auto}
   .dj-booth-gallery{grid-template-columns:1fr}
 }
+
+
+/* DJ Will Z curated career-highlight direction — v5.3 */
+.dj-milestone-head{align-items:end}
+.dj-highlight-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin:38px 0 28px;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--line)}
+.dj-highlight-strip>div{min-height:122px;padding:22px;background:#0f0f13;display:flex;flex-direction:column;justify-content:space-between}
+.dj-highlight-strip span{color:var(--muted);font-size:.72rem;letter-spacing:.09em;text-transform:uppercase}
+.dj-highlight-strip strong{margin-top:18px;color:#fff;font:750 1rem/1.3 "Manrope",sans-serif}
+.dj-booking-grid-balanced{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.dj-booking-grid-balanced figure,.dj-booking-grid-balanced figure.landscape{grid-column:auto;grid-template-rows:minmax(390px,1fr) auto}
+.dj-booking-grid-balanced img,.dj-booking-grid-balanced figure.landscape img{width:100%;height:100%;min-height:390px;object-fit:contain;padding:12px;background:#09090c}
+.dj-booking-grid-balanced figure:nth-child(2) img{object-fit:contain;padding:18px}
+.dj-regional-note{margin-top:26px;padding:26px 28px;border:1px solid var(--line);border-radius:22px;background:radial-gradient(circle at top right,rgba(255,60,166,.09),transparent 36%),#0e0e12;display:grid;grid-template-columns:minmax(220px,.75fr) minmax(0,1.25fr);gap:34px;align-items:center}
+.dj-regional-note h3{margin:7px 0 0;font:800 clamp(1.55rem,3vw,2.35rem)/1.05 "Manrope",sans-serif;color:#fff}
+.dj-regional-note p{margin:0;color:var(--muted);line-height:1.75}
+.dj-regional-note strong{color:#fff}
+@media(max-width:900px){
+  .dj-highlight-strip{grid-template-columns:repeat(2,1fr)}
+  .dj-booking-grid-balanced{grid-template-columns:1fr}
+  .dj-booking-grid-balanced figure,.dj-booking-grid-balanced figure.landscape{grid-template-rows:auto auto}
+  .dj-booking-grid-balanced img,.dj-booking-grid-balanced figure.landscape img{height:auto;min-height:0;max-height:760px}
+}
+@media(max-width:650px){
+  .dj-highlight-strip{grid-template-columns:1fr}
+  .dj-highlight-strip>div{min-height:96px}
+  .dj-regional-note{grid-template-columns:1fr;gap:18px;padding:22px}
+}
