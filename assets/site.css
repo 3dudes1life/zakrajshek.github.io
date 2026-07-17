@@ -811,3 +811,41 @@ h2 { letter-spacing: -0.035em; }
 .dj-mixcloud-bottom .btn{flex:0 0 auto}.dj-mixcloud-bottom .btn span{margin-left:8px}
 @media(max-width:850px){.dj-mixcloud-intro,.dj-mixcloud-feature{grid-template-columns:1fr}.dj-mixcloud-number{min-height:240px}.dj-mixcloud-bottom{align-items:flex-start;flex-direction:column}}
 @media(max-width:560px){.dj-mixcloud-shell{padding:28px 22px;border-radius:25px}.dj-mixcloud-intro h2{font-size:clamp(2.75rem,14vw,4.4rem)}.dj-mixcloud-number{min-height:210px;padding:26px}.dj-mixcloud-number span{font-size:clamp(6rem,30vw,8rem)}.dj-mixcloud-story h3{font-size:clamp(2.2rem,12vw,3.4rem)}.dj-mixcloud-bottom .btn{width:100%}}
+
+
+/* Version 6.7 — homepage spacing + recognition archive */
+.hero-title{
+  letter-spacing:-.015em;
+  line-height:1.035;
+}
+.hero-title .line{
+  padding-bottom:.035em;
+}
+
+.recognition-section{background:radial-gradient(circle at 12% 12%,rgba(255,53,156,.10),transparent 28%),#08080a}
+.recognition-head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr);gap:clamp(40px,7vw,90px);align-items:end;margin-bottom:52px}
+.recognition-head h2{margin:14px 0 0;font-size:clamp(3rem,6vw,6rem);line-height:1.01;letter-spacing:-.025em}
+.recognition-head>p{margin:0;color:#bdbdc5;font-size:1.08rem;line-height:1.78}
+.recognition-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:310px;gap:18px}
+.recognition-card{position:relative;overflow:hidden;margin:0;border:1px solid var(--line);border-radius:24px;background:#111116;min-height:0}
+.recognition-card-wide{grid-column:span 2}
+.recognition-card-tall{grid-row:span 2}
+.recognition-card img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .45s ease,filter .45s ease}
+.recognition-card-tall img,.recognition-card:nth-child(5) img,.recognition-card:nth-child(6) img,.recognition-card:nth-child(7) img{object-fit:contain;background:#f4f0e8;padding:18px}
+.recognition-card::after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.88))}
+.recognition-card figcaption{position:absolute;z-index:2;left:22px;right:22px;bottom:20px}
+.recognition-card figcaption span,.recognition-card figcaption strong{display:block}
+.recognition-card figcaption span{color:#ff67b7;font-size:.69rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.recognition-card figcaption strong{margin-top:7px;color:#fff;font:700 1.15rem/1.22 "Manrope",sans-serif}
+.recognition-card:hover img{transform:scale(1.025);filter:saturate(1.06)}
+@media(max-width:1000px){
+ .recognition-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:300px}
+ .recognition-card-tall{grid-row:span 1}
+}
+@media(max-width:700px){
+ .hero-title{line-height:1.07;letter-spacing:-.01em}
+ .recognition-head{grid-template-columns:1fr;gap:24px}
+ .recognition-grid{grid-template-columns:1fr;grid-auto-rows:300px}
+ .recognition-card-wide{grid-column:span 1}
+ .recognition-card-tall{grid-row:span 1}
+}
