@@ -787,3 +787,27 @@ h2 { letter-spacing: -0.035em; }
   .community-panel h2{font-size:clamp(2.7rem,13vw,4rem);max-width:100%}
   .build-cta h2{max-width:100%}
 }
+
+
+/* DJ Will Z Mixcloud legacy archive — v6.5 */
+.dj-mixcloud{position:relative;background:radial-gradient(circle at 12% 15%,rgba(255,56,159,.13),transparent 34%),radial-gradient(circle at 88% 82%,rgba(64,203,255,.08),transparent 32%),#08080b}
+.dj-mixcloud-shell{position:relative;overflow:hidden;padding:clamp(34px,6vw,72px);border:1px solid var(--line);border-radius:34px;background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.008)),#0c0c10;box-shadow:0 34px 90px rgba(0,0,0,.28)}
+.dj-mixcloud-shell:before{content:"";position:absolute;width:420px;height:420px;right:-170px;top:-200px;border-radius:50%;border:1px solid rgba(255,255,255,.07);box-shadow:0 0 0 42px rgba(255,255,255,.018),0 0 0 86px rgba(255,255,255,.012)}
+.dj-mixcloud-intro{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);gap:clamp(36px,7vw,90px);align-items:end;padding-bottom:clamp(34px,5vw,58px);border-bottom:1px solid var(--line)}
+.dj-mixcloud-intro h2{max-width:860px;margin:14px 0 0;color:#fff;font:800 clamp(3.2rem,6.8vw,7rem)/.94 "Manrope",sans-serif;letter-spacing:-.035em}
+.dj-mixcloud-intro>p{margin:0;color:#c8c8cf;font-size:1.08rem;line-height:1.78}
+.dj-mixcloud-feature{position:relative;z-index:1;display:grid;grid-template-columns:minmax(250px,.7fr) minmax(0,1.3fr);gap:clamp(32px,7vw,86px);align-items:center;padding:clamp(38px,6vw,76px) 0}
+.dj-mixcloud-number{min-height:310px;display:flex;flex-direction:column;justify-content:center;padding:32px;border:1px solid var(--line);border-radius:28px;background:radial-gradient(circle at 35% 25%,rgba(255,56,159,.18),transparent 45%),#09090c}
+.dj-mixcloud-number span{display:block;color:#fff;font:800 clamp(6rem,13vw,11rem)/.72 "Manrope",sans-serif;letter-spacing:-.065em}
+.dj-mixcloud-number strong{display:block;margin-top:28px;color:var(--accent);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase}
+.dj-mixcloud-story{max-width:760px}
+.dj-mixcloud-era{display:inline-block;margin-bottom:20px;color:#8bdfff;font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+.dj-mixcloud-story h3{margin:0 0 20px;color:#fff;font:800 clamp(2.3rem,4.7vw,4.9rem)/.98 "Manrope",sans-serif;letter-spacing:-.03em}
+.dj-mixcloud-story p{margin:0;color:#c7c7ce;font-size:1.1rem;line-height:1.82}
+.dj-mixcloud-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.dj-mixcloud-tags span{padding:11px 15px;border:1px solid var(--line);border-radius:999px;background:#111116;color:#e7e7eb;font-size:.78rem;font-weight:700}
+.dj-mixcloud-bottom{position:relative;z-index:1;display:flex;justify-content:space-between;gap:28px;align-items:center;padding-top:32px;border-top:1px solid var(--line)}
+.dj-mixcloud-bottom blockquote{max-width:690px;margin:0;color:#fff;font:700 clamp(1.35rem,2.6vw,2.1rem)/1.25 "Manrope",sans-serif;letter-spacing:-.015em}
+.dj-mixcloud-bottom .btn{flex:0 0 auto}.dj-mixcloud-bottom .btn span{margin-left:8px}
+@media(max-width:850px){.dj-mixcloud-intro,.dj-mixcloud-feature{grid-template-columns:1fr}.dj-mixcloud-number{min-height:240px}.dj-mixcloud-bottom{align-items:flex-start;flex-direction:column}}
+@media(max-width:560px){.dj-mixcloud-shell{padding:28px 22px;border-radius:25px}.dj-mixcloud-intro h2{font-size:clamp(2.75rem,14vw,4.4rem)}.dj-mixcloud-number{min-height:210px;padding:26px}.dj-mixcloud-number span{font-size:clamp(6rem,30vw,8rem)}.dj-mixcloud-story h3{font-size:clamp(2.2rem,12vw,3.4rem)}.dj-mixcloud-bottom .btn{width:100%}}
