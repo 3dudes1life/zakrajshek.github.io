@@ -473,3 +473,34 @@ body.menu-open{overflow:hidden}.chapter-grid{display:grid;grid-template-columns:
 @media(max-width:1050px){.dj-hero-grid{grid-template-columns:minmax(0,1fr) minmax(300px,390px);gap:42px}.dj-stats{grid-template-columns:1fr}.dj-feature-grid{grid-template-columns:1.2fr .8fr}.dj-feature-grid .dj-feature-card:last-child{grid-column:1/-1;min-height:380px}.dj-masonry{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:820px){.dj-hero{padding:48px 0 64px}.dj-hero-grid,.dj-story-grid,.dj-digital-grid,.dj-legacy-panel{grid-template-columns:1fr}.dj-hero-portrait{width:min(100%,560px);order:-1}.dj-hero-copy h1{font-size:clamp(4rem,19vw,7rem)}.dj-feature-grid,.dj-stage-grid{grid-template-columns:1fr}.dj-feature-card,.dj-feature-grid .dj-feature-card:last-child{min-height:390px}.dj-stage-main{min-height:0}.dj-stage-main img{min-height:360px}.dj-stage-stack{grid-template-columns:1fr 1fr}.dj-digital-grid{gap:36px}.dj-masonry{grid-template-columns:repeat(2,1fr)}.dj-booth-gallery{grid-template-columns:1fr}.dj-legacy-panel{gap:30px}}
 @media(max-width:560px){.dj-hero-portrait{border-radius:24px}.dj-hero-copy h1{font-size:clamp(3.8rem,20vw,5.8rem)}.dj-deck{font-size:1rem}.dj-hero-actions{display:grid}.dj-hero-actions .btn{width:100%}.dj-feature-grid{grid-template-columns:1fr}.dj-feature-card,.dj-feature-grid .dj-feature-card:last-child{min-height:340px}.dj-stage-stack{grid-template-columns:1fr}.dj-digital-cards{grid-template-columns:1fr 1fr}.dj-digital-cards figure:first-child{grid-column:1/-1}.dj-masonry{grid-template-columns:1fr}.dj-masonry figure.wide,.dj-masonry figure.landscape{grid-column:auto}.dj-masonry figure{min-height:280px}.dj-legacy-panel{padding:26px;border-radius:24px}}
+
+
+/* DJ Will Z expanded booking and digital history — 2026-07-17 */
+.dj-bookings{background:linear-gradient(180deg,transparent,rgba(255,60,166,.035),transparent)}
+.dj-booking-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.dj-booking-grid figure{margin:0;grid-column:span 3;display:grid;grid-template-rows:minmax(360px,1fr) auto;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#101014}
+.dj-booking-grid figure.landscape{grid-column:span 6}
+.dj-booking-grid img{display:block;width:100%;height:100%;min-height:360px;object-fit:contain;background:#0b0b0e;padding:10px}
+.dj-booking-grid figure.landscape img{object-fit:cover;padding:0}
+.dj-booking-grid figcaption{padding:15px 16px;border-top:1px solid var(--line)}
+.dj-booking-grid figcaption strong,.dj-booking-grid figcaption span{display:block}
+.dj-booking-grid figcaption strong{font:750 .92rem/1.25 "Manrope",sans-serif;color:#fff}
+.dj-booking-grid figcaption span{margin-top:5px;color:var(--muted);font-size:.78rem;line-height:1.45}
+.dj-digital-cards-expanded{grid-template-columns:repeat(2,1fr)}
+.dj-digital-cards-expanded figure:first-child img{object-fit:contain;background:#050507}
+.dj-digital-cards-expanded figure:nth-child(2){grid-column:1/-1}
+.dj-digital-cards-expanded figure:nth-child(2) img{aspect-ratio:16/9;object-fit:contain;background:#050507}
+.dj-booth-gallery{grid-template-columns:repeat(4,1fr)}
+@media(max-width:1050px){
+  .dj-booking-grid figure{grid-column:span 6}
+  .dj-booking-grid figure.landscape{grid-column:span 12}
+  .dj-booth-gallery{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:700px){
+  .dj-booking-grid{grid-template-columns:1fr}
+  .dj-booking-grid figure,.dj-booking-grid figure.landscape{grid-column:auto;grid-template-rows:auto auto}
+  .dj-booking-grid img,.dj-booking-grid figure.landscape img{height:auto;min-height:0;max-height:640px;object-fit:contain;padding:8px}
+  .dj-digital-cards-expanded{grid-template-columns:1fr}
+  .dj-digital-cards-expanded figure:nth-child(2){grid-column:auto}
+  .dj-booth-gallery{grid-template-columns:1fr}
+}
