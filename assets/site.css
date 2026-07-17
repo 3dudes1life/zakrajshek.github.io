@@ -711,3 +711,79 @@ h2 { letter-spacing: -0.035em; }
 .hero-card-title,
 .dj-pullquote,
 .quote blockquote { letter-spacing: -0.025em; }
+
+/* Version 6.3 — site-wide typography and responsive quality pass */
+/* Large display type needs air: avoid both letter collisions and line collisions. */
+:where(.hero-title,.page-hero h1,.creative-hero-copy h1,.build-hero-copy h1,
+       .section-head h2,.content-copy h2,.contact-panel h2,.quote blockquote,
+       .creative-section-head h2,.podcast-copy h2,.creator-studio-panel h2,
+       .build-belief h2,.build-section-head h2,.community-panel h2,
+       .build-lesson h2,.build-cta h2){
+  letter-spacing:-.018em;
+  line-height:1.01;
+  text-wrap:balance;
+  overflow-wrap:normal;
+  word-break:normal;
+}
+
+/* The two extra-large hero treatments can remain dramatic without crushing glyphs. */
+.hero-title,.creative-hero-copy h1,.build-hero-copy h1{
+  letter-spacing:-.022em;
+  line-height:.93;
+}
+
+/* Never let manually stacked display lines visually collide. */
+.creative-hero-copy h1 br,
+.build-hero-copy h1 br,
+.build-cta h2 br{line-height:inherit}
+
+/* Consistent, readable section titles throughout every non-DJ chapter. */
+:where(h2,.work-card h3,.chapter-card h3,.book-feature-copy h3,
+       .build-stage-grid h3,.trust-grid h3,.hero-card-title,
+       .talk-card h3,.media-card h3,.story-card h3){
+  letter-spacing:-.015em;
+}
+
+/* The LGBTQ+ panel exposed the old .9 line-height most clearly. */
+.community-panel h2{
+  max-width:920px;
+  line-height:1.04;
+  letter-spacing:-.014em;
+}
+
+/* Improve headings that share narrow two-column layouts. */
+.build-belief h2,.build-section-head h2,.build-lesson h2{
+  line-height:1.02;
+}
+.build-cta h2{line-height:1.04}
+
+/* Page titles should wrap deliberately rather than squeeze glyphs. */
+.page-hero h1{line-height:1.01;max-width:1120px}
+
+/* Preserve the already-approved DJ showcase's composition; only prevent collisions. */
+.dj-hero-copy h1{letter-spacing:-.025em;line-height:.93}
+.dj-story-grid h2,.dj-digital h2,.dj-legacy h2{letter-spacing:-.025em;line-height:1}
+
+/* Tablet and mobile typography QA */
+@media(max-width:950px){
+  :where(.build-belief h2,.build-section-head h2,.community-panel h2,
+         .build-lesson h2,.build-cta h2,.creative-section-head h2,
+         .podcast-copy h2,.creator-studio-panel h2){
+    max-width:16ch;
+  }
+  .community-panel h2{max-width:18ch}
+}
+@media(max-width:600px){
+  :where(.hero-title,.page-hero h1,.creative-hero-copy h1,.build-hero-copy h1,
+         .section-head h2,.content-copy h2,.contact-panel h2,
+         .creative-section-head h2,.podcast-copy h2,.creator-studio-panel h2,
+         .build-belief h2,.build-section-head h2,.community-panel h2,
+         .build-lesson h2,.build-cta h2){
+    letter-spacing:-.012em;
+    line-height:1.04;
+    text-wrap:balance;
+  }
+  .hero-title,.creative-hero-copy h1,.build-hero-copy h1{line-height:.97}
+  .community-panel h2{font-size:clamp(2.7rem,13vw,4rem);max-width:100%}
+  .build-cta h2{max-width:100%}
+}
